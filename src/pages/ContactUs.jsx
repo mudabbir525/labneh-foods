@@ -76,31 +76,7 @@ const ContactUs = () => {
         ></iframe>
       </section>
 
-      <section id="contact" className="contact-section">
-        <div className="contact-info">
-          <div className="contact-item">
-            <FaPhone size={24} />
-            <span className="contact-text">+91 98107 01117</span>
-          </div>
-
-          <div className="contact-item">
-            <FaEnvelope size={24} />
-            <span className="contact-text">labneh.india@gmail.com</span>
-          </div>
-
-          <div className="contact-item">
-            <span className="contact-text bold">
-              Address 1: Ambience Mall, Nelson Mandela Marg, Mary, Vasant Kunj, New Delhi, Delhi 110074
-            </span>
-          </div>
-
-          <div className="contact-item">
-            <span className="contact-text bold">
-              Address 2: Floor 3, Ambience Mall, National Highway 8, DLF Phase 3, Sector 24, Gurugram, Haryana 122022
-            </span>
-          </div>
-        </div>
-      </section>
+     
       </div>
     </>
   );
