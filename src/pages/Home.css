@@ -423,6 +423,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       grid-column: span 1;
       grid-row: span 1;
   }
+  .thirdh1
+  {
+      font-size:20px;
+  }
 }
 
 /* Small devices (768px and below) */
