@@ -9,8 +9,6 @@
   background-color: #381515;
   min-height:90vh;
   height: 100%;
- 
-
 }
 
 .menu-buttons {
@@ -80,7 +78,7 @@ td
 .table th, .table td {
   border: 1px solid #ff6600;
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .table th {
@@ -148,10 +146,27 @@ td
     padding: 6px;
   }
 }
-
-
-
-.menu-heading{
-  color:white;
+.menu-heading h1
+{
+  color: #ff6600;
   text-align: center;
 }
+@media (max-width:1344px) {
+ .menu-heading h1{
+    font-size: 35px;
+  }
+  
+}
+@media (max-width:1024px) {
+ .menu-heading h1{
+    font-size: 20px;
+  }
+  
+}
+@media (max-width:1185px) {
+ .menu-heading h1{
+    font-size: 30px;
+  }
+  
+}
+
