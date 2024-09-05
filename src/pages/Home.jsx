@@ -8,60 +8,48 @@ import mandi from "../assets/mandi-rice.png";
 import drinks from '../assets/drinks.png';
 
 const boxStyles = {
-  box1: {
+  box_1: {
     background: 'linear-gradient(45deg, #ffcc00, #ff9900), url(./doodle.svg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'multiply',
-    gridColumn: 'span 1',
-    gridRow: 'span 2',
     transition: 'background 0.3s ease',
   },
-  box2: {
+  box_2: {
     background: 'linear-gradient(45deg, #f96f5d, #f86d6f), url(./doodle.svg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'multiply',
-    gridColumn: 'span 1',
-    gridRow: 'span 1',
   },
-  box3: {
+  box_3: {
     background: 'linear-gradient(45deg, #3498db, #2980b9), url(./doodle.svg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'multiply',
-    gridColumn: 'span 2',
-    gridRow: 'span 1',
   },
-  box4: {
+  box_4: {
     background: 'linear-gradient(45deg, #2ecc71, #27ae60), url(./doodle.svg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'multiply',
-    gridColumn: 'span 2',
-    gridRow: 'span 2',
   },
-  box5: {
+  box_5: {
     background: 'linear-gradient(45deg, #9b59b6, #8e44ad), url(./doodle.svg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'multiply',
-    gridColumn: 'span 1',
-    gridRow: 'span 1',
   },
-  box6: {
+  box_6: {
     background: 'linear-gradient(45deg, #f1c40f, #f39c12), url(./doodle.svg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'multiply',
-    gridColumn: 'span 2',
-    gridRow: 'span 1',
   },
 };
 
@@ -129,27 +117,27 @@ const Home = () => {
 <div className="third">
     <h1 className="thirdh1">Middle Eastern Feasts</h1>
     <div className="grid-container">
-        <div className="box box1" style={boxStyles.box1}>
+        <div className="box box1" style={boxStyles.box_1}>
             <img src={drinks} alt="Item 1" className="box-image"></img>
             <div className="box-info">Drinks Starting from 299/-</div>
         </div>
-        <div className="box box2" style={boxStyles.box2}>
+        <div className="box box2" style={boxStyles.box_2}>
             <img src={salad} alt="Item 2" className="box-image"></img>
             <div className="box-info">Information about Item 2</div>
         </div>
-        <div className="box box3" style={boxStyles.box3}>
+        <div className="box box3" style={boxStyles.box_3}>
             <img src={mandi} alt="Item 3" className="box-image"></img>
             <div className="box-info">Information about Item 3</div>
         </div>
-        <div className="box box4" style={boxStyles.box4}>
+        <div className="box box4" style={boxStyles.box_4}>
             <img src={burger1} alt="Item 4" className="box-image"></img>
             <div className="box-info">Information about Item 4</div>
         </div>
-        <div className="box box5" style={boxStyles.box5}>
+        <div className="box box5" style={boxStyles.box_5}>
             <img src={shawarma} alt="Item 5" className="box-image"></img>
             <div className="box-info">Information about Item 5</div>
         </div>
-        <div className="box box6" style={boxStyles.box6}>
+        <div className="box box6" style={boxStyles.box_6}>
             <img src={pizza} alt="Item 6" className="box-image"></img>
             <div className="box-info">Information about Item 6</div>
         </div>
@@ -160,6 +148,5 @@ const Home = () => {
 
   );
 };
-
 
 export default Home;
