@@ -275,6 +275,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -344,7 +345,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .box:hover .box-info {
   bottom: 0;
 }
-/* .box1 {
+.box1 {
   background: linear-gradient(45deg, #ffcc00, #ff9900), url('./doodle.svg');
   background-size: cover; 
   background-position: center; 
@@ -405,7 +406,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   grid-row: span 1;
 }
 
-/* Responsive Design  */
+/* Responsive Design */
 
 /* Medium devices (1024px and below) */
 @media (max-width: 1024px) {
@@ -464,26 +465,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .third h1
 {
   margin-bottom: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* In Menu.css */
+}/* In Menu.css */
 .menu-section {
   background-color: #f9f9f9; /* Light background color */
   padding: 2rem; /* Space around the content */
