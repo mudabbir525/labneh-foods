@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  padding: 20px;
+  background-color: #381515;
+  min-height:90vh;
+  height: 100%;
+ 
+
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.category-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  width: auto; /* Full width of the container */
+}
+
+.category-button:hover {
+  background-color: #d35400;
+  color: white;
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px;
+}
+
+.menu-details {
+  width: 60%;
+  padding-right: 20px; /* Space between details and image */
+}
+td
+{
+  color: white;
+}
+.menu-details h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #d35400;
+}
+
+.table-container {
+  margin-bottom: 20px;
+}
+
+.table-container h3 {
+  font-size: 24px;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.non-veg-items h3 {
+  color: #c0392b;
+}
+
+.table {
+  min-width: 60%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ff6600;
+  padding: 10px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+
+.menu-image {
+  width: 30%;
+}
+
+.menu-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .menu-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .menu-details, .menu-image {
+    width: 100%;
+  }
+
+  .menu-details {
+    padding-right: 0; /* Remove padding for smaller screens */
+  }
+
+  .menu-image {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-details h2 {
+    font-size: 30px;
+  }
+
+  .table-container h3 {
+    font-size: 20px;
+  }
+
+  .table td {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-details h2 {
+    font-size: 24px;
+  }
+
+  .table-container h3 {
+    font-size: 18px;
+  }
+
+  .table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+
+
+.menu-heading{
+  color:white;
+  text-align: center;
+}

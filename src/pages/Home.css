@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  text-align: center;
+  background-color: #381515;
+  color: #fff;
+}
+
+.home h1 {
+  font-size: 48px;
+}
+
+.home p {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  min-height: 50vh;
+  background-color: #381515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.one {
+  width: 50%;
+  height: auto;
+  padding: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.one p {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 55px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.one h1
+{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 15px;
+  margin-left: 55px;
+  text-align: left;
+  color: transparent; /* Makes the text fill transparent */
+  -webkit-text-stroke: 2px rgb(255, 255, 255); /* Creates the outline with a specific color and width */
+  text-transform: uppercase;
+}
+.one h1:hover,h2:hover
+{
+  color: white;
+  cursor:default;
+}
+.one h2
+{
+  margin-left: 55px;
+  text-align: left;
+}
+
+.one .btn {
+  margin-top: 20px;
+  padding: 7px;
+  font-size: 15px;
+  border: 2px solid #ff6600;
+  background-color: transparent;
+  border-radius: 7px;
+  color: #ff6600;
+}
+
+.btn:hover {
+  background-color: #ff6600;
+  color: white;
+  cursor: pointer;
+}
+
+.two {
+  width: 50%;
+  height: auto;
+}
+
+.two img {
+  padding: 50px;
+  animation: moveUpDown 1.5s infinite ease-in-out;
+  transition: opacity 1s ease-in-out;
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home h1 {
+    font-size: 50px;
+    text-align: left;
+  }
+
+  .home p {
+    font-size: 20px;
+    margin-left: 55px;
+    text-align: left;
+  }
+
+  .one {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .two {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 56px;
+  }
+
+  .home p {
+    font-size: 18px;
+  }
+
+  .one {
+    padding: 20px;
+  }
+
+  .two img {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .home p {
+    font-size: 16px;
+  }
+
+  .one {
+    padding: 15px;
+  }
+
+  .two img {
+    padding: 15px;
+  }
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.typing-effect {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink-caret 0.75s step-end infinite;
+}
+.typing-effect
+{
+  position: relative;
+  top: 9px;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+.second {
+  min-height: 100vh;
+  background-image: url('../assets/hotel.png');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-us-content {
+  background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.5px );
+-webkit-backdrop-filter: blur( 10.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 70vw;
+  padding: 60px;
+  border-radius: 10px;
+  /* max-width: 600px; */
+  margin: 0 auto;
+}
+
+.about-us-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.about-us-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: black;
+  text-align: justify;
+}
+.third {
+  min-height: 100vh;
+  background: #381515, url('./doodle.svg');
+  background-position: top;
+  /* background-blend-mode: multiply; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; /* Ensure the pattern does not tile */
+  background-blend-mode: overlay; 
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+.third h1 {
+  margin-bottom: 20px;
+  font-size: 4rem; 
+  text-align: center;
+  transition: 0.4s all ease;
+}
+
+.third h1:hover {
+  background: linear-gradient(90deg, yellow, orange, red); 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  scale: 1.04;
+    /* text-shadow: 1px 1px 15px #ffffff; */
+    /* color: rgb(255, 255, 255); */
+    cursor: pointer;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid white;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #fff;
+}
+.box:hover img{
+  transform: scale(0.95);
+}
+.box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  transform-origin: center;
+  filter: drop-shadow(0px 5px 20px rgba(255, 255, 255));
+  transition: transform 0.3s ease;
+}
+
+.box3 img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  transform-origin: center;
+  transition: background 0.3s ease;
+}
+
+.box-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  transition: bottom 0.3s ease;
+}
+.box img {
+  transform: scale(0.8);
+}
+.box:hover .box-info {
+  bottom: 0;
+}
+.box1 {
+  background: linear-gradient(45deg, #ffcc00, #ff9900), url('./doodle.svg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-blend-mode: multiply; 
+  grid-column: span 1;
+  grid-row: span 2;
+  transition: background 0.3s ease; 
+}
+
+.box2 {
+  background: linear-gradient(45deg, #f96f5d, #f86d6f), url('./doodle.svg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-blend-mode: multiply;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.box3 {
+  background: linear-gradient(45deg, #3498db, #2980b9), url('./doodle.svg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-blend-mode: multiply;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.box4 {
+  background: linear-gradient(45deg, #2ecc71, #27ae60), url('./doodle.svg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-blend-mode: multiply;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.box5 {
+  background: linear-gradient(45deg, #9b59b6, #8e44ad), url('./doodle.svg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-blend-mode: multiply;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.box6 {
+  background: linear-gradient(45deg, #f1c40f, #f39c12), url('./doodle.svg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-blend-mode: multiply;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* Responsive Design */
+
+/* Medium devices (1024px and below) */
+@media (max-width: 1024px) {
+  .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .box {
+      font-size: 1rem;
+  }
+  .box img {
+      transform: scale(0.7); /* Zoom out slightly */
+  }
+  .box1, .box2, .box3, .box4, .box5, .box6 {
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+}
+
+/* Small devices (768px and below) */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .box {
+      font-size: 0.9rem;
+  }
+  .box img {
+      transform: scale(0.8); /* Zoom out more */
+  }
+  .box1, .box2, .box3, .box4, .box5, .box6 {
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+}
+
+/* Extra small devices (480px and below) */
+@media (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .box {
+      font-size: 0.8rem;
+  }
+  .box1 img{
+    width: 100px;
+    height: 100px;
+  }
+  .box img {
+      transform: scale(0.7); /* Zoom out further */
+  }
+  .box1, .box2, .box3, .box4, .box5, .box6 {
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+}
+.third h1
+{
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* In Menu.css */
+.menu-section {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 2rem; /* Space around the content */
+  margin: 1rem auto; /* Center the section and add margin */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 1200px; /* Max width for larger screens */
+}
+
+.menu-section h1 {
+  font-size: 2rem; /* Larger font size for the title */
+  color: #333; /* Dark color for the text */
+  margin-bottom: 1rem; /* Space below the title */
+}
+
+.menu-section p {
+  font-size: 1rem; /* Standard font size for the paragraph */
+  color: #666; /* Slightly lighter color for readability */
+  line-height: 1.6; /* Increased line height for better readability */
+  margin-bottom: 1rem; /* Space below paragraphs */
+}
+
+.menu-section img {
+  display: block; /* Ensures images are block elements */
+  max-width: 100%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 1rem 0; /* Space around images */
+}

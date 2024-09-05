@@ -1,0 +1,93 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+.footer-info{
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-contact p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.instagram-icon {
+  color: #e0e0e0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.address-section,
+.nav-section,
+.order-section {
+  max-width: 300px;
+}
+
+.nav-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-section li {
+  margin-bottom: 10px;
+}
+
+.nav-section a {
+  color: #e0e0e0;
+  text-decoration: none;
+  text-align:left;
+
+}
+
+.nav-section a:hover {
+  color: #f5a623;
+}
+
+.order-section {
+  text-align: center;
+}
+
+.order-section span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.food-platforms {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.food-platform-logo {
+  width: 50px;
+  height: auto;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.nav-left {
+  text-align: left;
+}

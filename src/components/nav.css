@@ -1,0 +1,185 @@
+/* Futuristic Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #381515;
+  box-shadow: 0 4px 8px rgba(210, 209, 209, 0.4);
+  position: relative;
+  height: 10vh;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.brand-glow {
+  position: relative;
+  color: #FFFF;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.brand-glow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  opacity: 0.6;
+  background: radial-gradient(circle, rgba(0, 191, 255, 0.5) 10%, transparent 40%);
+  filter: blur(8px);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-button {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: #FFFF;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.toggle-button:hover {
+  color: #ff6600;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 30%;
+  background: #fff3e0;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.4);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar .close-button {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-links li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar-links li a:hover {
+  color: #ff6600;
+}
+
+.navbar-links {
+  list-style: none; /* Remove dots from navbar links */
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links li a {
+  color: #FFFF;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar-links li a::before, .navbar-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff6600;
+  transition: width 0.3s;
+  bottom: -5px;
+}
+
+.navbar-links li a::before {
+  left: 0;
+}
+
+.navbar-links li a::after {
+  right: 0;
+}
+
+.navbar-links li a:hover::before, .navbar-links li a:hover::after {
+  width: 100%;
+}
+
+.navbar-links li a:hover {
+  color: #d35602;
+  text-shadow: 0 0 8px #ff6600;
+}
+.navbar-brand span img
+{
+  position: absolute;
+  top: -90px;
+  width: 150px;
+  left: 20%;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar-links {
+    display: none; /* Hide the links */
+  }
+  
+  .toggle-button {
+    display: block; /* Show the toggle button */
+  }
+  .navbar-brand span img
+  {
+    position: relative;
+    top: -70px;
+    width: 150px;
+    left: 5%;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-links {
+    display: flex; /* Show the links */
+  }
+  
+  .toggle-button {
+    display: none; /* Hide the toggle button */
+  }
+}
