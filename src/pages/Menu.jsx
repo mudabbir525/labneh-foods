@@ -11,12 +11,11 @@ import saladImage from '../assets/salad.png';
 import drinksImage from '../assets/drinks.png';
 import extrasImage from '../assets/extras.png';
 
-
-
+const vegDot = '🟢'; // Green dot for veg
+const nonVegDot = '🔴'; // Red dot for non-veg
 
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  
 
   const menuItems = {
     Shawarma: {
@@ -33,11 +32,9 @@ const Menu = () => {
         { name: 'LAMB SHAWARMA', price: 319, type: 'non-veg' },
         { name: 'LAMB KAFTA ROLL', price: 319, type: 'non-veg' },
         { name: 'LABNEH SPL. SHAWARMA ROLL', price: 339, type: 'non-veg' },
-        
-        
-        { name:'SPICY PANEER SHAWARMA' , price: 349, type: 'veg' },
-        { name:'FALAFEL WITH HUMUS' , price: 349, type: 'veg' },
-        { name:'CHICKEN SHAWARMA' , price: 379, type: 'non-veg' },
+        { name: 'SPICY PANEER SHAWARMA', price: 349, type: 'veg' },
+        { name: 'FALAFEL WITH HUMUS', price: 349, type: 'veg' },
+        { name: 'CHICKEN SHAWARMA', price: 379, type: 'non-veg' },
       ],
       image: shawarmaImage,
     },
@@ -46,7 +43,7 @@ const Menu = () => {
         { name: 'Veg Mandi Rice', price: 200, type: 'veg' },
         { name: 'Chicken Mandi Rice', price: 250, type: 'non-veg' },
         { name: 'Mutton Mandi Rice', price: 300, type: 'non-veg' },
-        { name: 'Fish Mandi Rice', price: 400, type: 'veg' },
+        { name: 'Fish Mandi Rice', price: 400, type: 'non-veg' },
       ],
       image: mandiRiceImage,
     },
@@ -113,11 +110,25 @@ const Menu = () => {
       ],
       image: extrasImage,
     },
+    'Open Shawarma Platter': {
+      items: [
+        { name: 'Paneer Shawarma Platter', price: 349, type: 'veg' },
+        { name: 'Chicken Shawarma Platter', price: 379, type: 'non-veg' },
+        { name: 'Lamb Shawarma Platter', price: 399, type: 'non-veg' },
+      ],
+      image: shawarmaImage,
+    },
+  };
+
+  const shouldDisplayNonVegTable = (category) => {
+    return category !== 'Drinks' && category !== 'Extras';
   };
 
   return (
     <div className="menu">
-     <div className="menu-heading">  <h3>Explore our diverse menu inspired by Levantine and Indian cuisines.</h3>  </div>
+      <div className="menu-heading">
+        <h1>Explore our diverse menu inspired by Levantine and Indian cuisines.</h1>
+      </div>
       <div className="menu-buttons">
         {Object.keys(menuItems).map((category) => (
           <button
@@ -135,7 +146,7 @@ const Menu = () => {
           <div className="menu-details">
             <h2>{selectedCategory}</h2>
             <div className="table-container">
-              <h3>Veg</h3>
+              <h3>Vegetarian</h3>
               <table className="table">
                 <thead>
                   <tr>
@@ -145,43 +156,42 @@ const Menu = () => {
                 </thead>
                 <tbody>
                   {menuItems[selectedCategory].items
-                    .filter((item) => item.type === 'veg')
+                    .filter(item => item.type === 'veg')
                     .map((item, i) => (
                       <tr key={i}>
-                        <td>{item.name}</td>
+                        <td>{vegDot} {item.name}</td>
                         <td>₹{item.price}</td>
                       </tr>
                     ))}
                 </tbody>
               </table>
             </div>
-            <div className="table-container">
-              <h3>Non-Veg</h3>
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th>Item Name</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {menuItems[selectedCategory].items
-                    .filter((item) => item.type === 'non-veg')
-                    .map((item, i) => (
-                      <tr key={i}>
-                        <td>{item.name}</td>
-                        <td>₹{item.price}</td>
-                      </tr>
-                    ))}
-                </tbody>
-              </table>
-            </div>
+            {shouldDisplayNonVegTable(selectedCategory) && (
+              <div className="table-container">
+                <h3>Non-Vegetarian</h3>
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th>Item Name</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {menuItems[selectedCategory].items
+                      .filter(item => item.type === 'non-veg')
+                      .map((item, i) => (
+                        <tr key={i}>
+                          <td>{nonVegDot} {item.name}</td>
+                          <td>₹{item.price}</td>
+                        </tr>
+                      ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
           <div className="menu-image">
-            <img
-              src={menuItems[selectedCategory].image}
-              alt={selectedCategory}
-            />
+            <img src={menuItems[selectedCategory].image} alt={selectedCategory} className="category-image" />
           </div>
         </div>
       )}
