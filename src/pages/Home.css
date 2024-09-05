@@ -423,7 +423,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       grid-column: span 1;
       grid-row: span 1;
   }
-  .thirdh1
+  .third h1
   {
       font-size:20px;
   }
@@ -443,6 +443,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   .box1, .box2, .box3, .box4, .box5, .box6 {
       grid-column: span 1;
       grid-row: span 1;
+  }
+  .third h1
+  {
+      font-size:20px;
   }
 }
 
@@ -464,6 +468,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   .box1, .box2, .box3, .box4, .box5, .box6 {
       grid-column: span 1;
       grid-row: span 1;
+  }
+  .third h1
+  {
+      font-size:15px;
   }
 }
 .third h1
