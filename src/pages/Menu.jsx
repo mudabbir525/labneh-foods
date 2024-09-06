@@ -61,8 +61,8 @@ const Menu = () => {
     },
     Burgers: {
       items: [
-        { name: 'Veg Burger', price: 129, type: 'veg' },
-        { name: 'Falfel Burger', price: 149, type: 'veg' },
+        { name: 'VEG BURGER', price: 129, type: 'veg' },
+        { name: 'FALFEL BURGER', price: 149, type: 'veg' },
         { name: 'BBQ CHICKEN BURGER', price: 219, type: 'non-veg' },
         { name: 'CHICKEN SHAWARMA BURGER', price: 219, type: 'non-veg' },
         { name: 'JUICY LAMB BURGER', price: 269, type: 'non-veg' },
