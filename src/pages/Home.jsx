@@ -163,7 +163,7 @@ const Home = () => {
         </div>
     </div>
   <div className="one">
-   <button className="btn">Read More</button>
+   <button className="btn">MENU</button>
     </div>
   </div>
       <div className="fourth">
