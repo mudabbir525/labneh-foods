@@ -163,3 +163,23 @@
     font-size: 17px;
   }
 }
+
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+}
+
+.ss-developers {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #ffd700; 
+  cursor: pointer;
+}
+
+.ss-developers:hover {
+  color: #ff8c00; 
+}
