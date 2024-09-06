@@ -55,8 +55,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        */}
       </div>
-*/}
+
       <div className="footer-bottom">
         <p>© 2024 Labneh. Designed by SS Developers</p>
       </div>
