@@ -43,7 +43,7 @@ const Footer = () => {
             <li><Link to="/contact-us">Contact Us</Link></li> 
           </ul>
         </div>
-
+        {/*
         <div className="order-section">
           <span>Order Now</span>
           <div className="food-platforms">
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
+*/}
       <div className="footer-bottom">
         <p>© 2024 Labneh. Designed by SS Developers</p>
       </div>
