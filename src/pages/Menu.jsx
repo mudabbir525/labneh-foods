@@ -51,7 +51,7 @@ const Menu = () => {
     'Grill and Kebab': {
       items: [
         { name: 'PANEER SHISH TAOUK', price: 299, type: 'veg' },
-        { name: 'LABNEH SPL. GRILLED CHICKEN', price: 459/799, type: 'non-veg' },
+        { name: 'LABNEH SPL. GRILLED CHICKEN', price: 459`&`799, type: 'non-veg' },
         { name: 'CHICKEN SHISH TAOUK', price: 349, type: 'non-veg' },
         { name: 'TURKISH CHICKEN KEBAB', price: 389, type: 'non-veg' },
         { name: 'CHICKEN ADANA KEBAB', price: 389, type: 'non-veg' },
