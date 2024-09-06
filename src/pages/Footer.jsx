@@ -58,9 +58,19 @@ const Footer = () => {
         */}
       </div>
 
-      <div className="footer-bottom">
-        <p>© 2024 Labneh. Designed by SS Developers</p>
-      </div>
+     <div className="footer-bottom">
+  <p>
+    © 2024 Labneh. Designed by{" "}
+    <a 
+      href="https://wa.me/918328497607" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="ss-developers"
+    >
+      SS Developers
+    </a>
+  </p>
+</div>
     </footer>
   );
 }
