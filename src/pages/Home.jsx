@@ -7,55 +7,75 @@ import salad from "../assets/salad.png";
 import mandi from "../assets/mandi-rice.png";
 import drinks from '../assets/drinks.png';
 
-const boxStyles = {
-  box_1: {
-    background: 'linear-gradient(45deg, #ffcc00, #ff9900), url(./doodle.svg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundBlendMode: 'multiply',
-    transition: 'background 0.3s ease',
-  },
-  box_2: {
-    background: 'linear-gradient(45deg, #f96f5d, #f86d6f), url(./doodle.svg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundBlendMode: 'multiply',
-  },
-  box_3: {
-    background: 'linear-gradient(45deg, #3498db, #2980b9), url(./doodle.svg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundBlendMode: 'multiply',
-  },
-  box_4: {
-    background: 'linear-gradient(45deg, #2ecc71, #27ae60), url(./doodle.svg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundBlendMode: 'multiply',
-  },
-  box_5: {
-    background: 'linear-gradient(45deg, #9b59b6, #8e44ad), url(./doodle.svg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundBlendMode: 'multiply',
-  },
-  box_6: {
-    background: 'linear-gradient(45deg, #f1c40f, #f39c12), url(./doodle.svg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundBlendMode: 'multiply',
-  },
-};
-
-const images = [burger1, pizza, shawarma];
-
 const Home = () => {
+  useEffect(() => {
+    const boxes = document.querySelectorAll('.boxx');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = Array.from(boxes).indexOf(entry.target);
+          entry.target.classList.add('visible');
+          entry.target.style.transitionDelay = `${index * 0.2}s`; // Staggered delay
+        }
+      });
+    }, { threshold: 0.5 });
+
+    boxes.forEach((box) => observer.observe(box));
+    
+    return () => {
+      boxes.forEach((box) => observer.unobserve(box));
+    };
+  }, []);
+
+  const boxStyles = {
+    box_1: {
+      background: 'linear-gradient(45deg, #ffcc00, #ff9900), url(./doodle.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundBlendMode: 'multiply',
+      transition: 'background 0.3s ease',
+    },
+    box_2: {
+      background: 'linear-gradient(45deg, #f96f5d, #f86d6f), url(./doodle.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundBlendMode: 'multiply',
+    },
+    box_3: {
+      background: 'linear-gradient(45deg, #3498db, #2980b9), url(./doodle.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundBlendMode: 'multiply',
+    },
+    box_4: {
+      background: 'linear-gradient(45deg, #2ecc71, #27ae60), url(./doodle.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundBlendMode: 'multiply',
+    },
+    box_5: {
+      background: 'linear-gradient(45deg, #9b59b6, #8e44ad), url(./doodle.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundBlendMode: 'multiply',
+    },
+    box_6: {
+      background: 'linear-gradient(45deg, #f1c40f, #f39c12), url(./doodle.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundBlendMode: 'multiply',
+    },
+  };
+
+  const images = [burger1, pizza, shawarma];
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFading, setIsFading] = useState(false);
 
@@ -143,6 +163,15 @@ const Home = () => {
         </div>
     </div>
   </div>
+      <div className="fourth">
+  <h1 className="fourthh1">Discover Labneh</h1>
+  <div className="boxx">Levantine cuisine with a combination of Middle-Eastern and Indian Kebabs are the inspiration behind Labneh.</div>
+  <div className="boxx">Labneh will offer the best of dishes from Lebanon, Turkey, Arabia and India keeping in mind the local food preferences, tastes and eating habits.</div>
+  <div className="boxx">Set-up in a small format, Labneh is a casual fast food concept, best suited for food courts or small standalone spaces with limited seating or even a take-away option.</div>
+  <div className="boxx">Labneh will introduce some never-tried before food experiences both from the point of view of the food itself and the way it’s prepared.</div>
+  <div className="boxx">The customer experience shall include various preparations from the grill, a number of options of Shawarma and Doner wraps and rolls, Manakish (flatbread pizzas), Arabic and Lebanese kebabs, and Sliders along with Middle-Eastern desserts.</div>
+  <div className="boxx">OUR MOTTO - ensure quality and consistency is maintained across all menu items at all times and locations, making the experience for the customer a memorable one and ensuring repeat visits.</div>
+</div>
 </div>
 
 
