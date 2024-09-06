@@ -529,3 +529,108 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-top: 10px; /* Add spacing between the paragraphs */
   }
 }
+
+.fourth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+.boxx {
+  width: 80%;
+  /* height: 200px; */
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff; /* White border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Initial position */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, background 0.3s ease, box-shadow 0.3s ease; /* Added background and shadow transition */
+}
+
+/* Unique gradient backgrounds for each box */
+.boxx:nth-child(1) {
+  background:  #ff6600;
+}
+
+.boxx:nth-child(2) {
+  background:  #ff6600;
+}
+
+.boxx:nth-child(3) {
+  background:  #ff6600;
+}
+
+.boxx:nth-child(4) {
+  background:  #ff6600;
+}
+
+.boxx:nth-child(5) {
+  background:  #ff6600;
+}
+
+.boxx:nth-child(6) {
+  background:  #ff6600;
+}
+
+.boxx:nth-child(7) {
+  background:  #ff6600;
+}
+
+.boxx.visible {
+  opacity: 1;
+  transform: translateY(0); /* Final position */
+}
+
+/* Hover effects for each gradient */
+.boxx:hover {
+  background: linear-gradient(45deg, #fff, #f9f9f9); /* Lighter white gradient on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  color: #333; /* Darker text color for contrast */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .boxx {
+    width: 90%;
+    height: auto;
+    font-size: 1em;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .boxx {
+    width: 95%;
+    height: auto;
+    font-size: 1em;
+    margin: 5px;
+  }
+}
+.fourth h1 {
+  margin-bottom: 20px;
+  font-size: 4rem; 
+  text-align: center;
+  transition: 0.4s all ease;
+}
+
+.fourth h1:hover {
+  background: linear-gradient(90deg, #ff6600, white); 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  scale: 1.04;
+  cursor: pointer;
+}
+
