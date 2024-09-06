@@ -514,12 +514,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 
   .about-us-content h1 {
-    font-size: 18px; /* Reduce the heading size */
+    font-size: 15px; /* Reduce the heading size */
     text-align: center; /* Center the heading */
   }
 
   .about-us-content p {
-    font-size: 12px; /* Reduce the font size of paragraphs */
+    font-size: 9px; /* Reduce the font size of paragraphs */
     line-height: 1.4; /* Adjust line spacing for readability */
     text-align: justify; /* Justify text for better presentation */
   }
