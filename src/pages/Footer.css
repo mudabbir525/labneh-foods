@@ -171,6 +171,11 @@
   background-color: #000;
   color: #fff;
   font-size: 14px;
+  width: 100vw;        /* Full width across the screen */
+  position: relative;   /* Optional: Change to 'fixed' if you want it always visible at the bottom */
+  left: 0;
+  bottom: 0;
+  margin: 0;  
 }
 
 .ss-developers {
