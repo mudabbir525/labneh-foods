@@ -37,9 +37,9 @@ const Footer = () => {
         <div className="nav-section nav-left">
           <h3>Navigation</h3>
           <ul>
-            <li><a href="./Home">Home</a></li>
-            <li><a href="./Menu">Menu</a></li>
-            <li><a href="./ContactUs">Contact Us</a></li>
+            <Link to="/Home"><li>Home</li></Link>
+            <Link to="/Menu"><li>Menu</li></Link>
+            <Link to="/ContactUs"><li>Contact Us</li></Link>
           </ul>
         </div>
 
