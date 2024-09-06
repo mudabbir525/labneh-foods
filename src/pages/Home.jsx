@@ -92,6 +92,13 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
+   const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="home">
       <div className="container">
@@ -105,7 +112,7 @@ const Home = () => {
     <p>
       Our motto is to ensure quality and consistency across all menu items, making every visit memorable.
     </p>
-          <button className="btn">Read More</button>
+          <button className="btn" onClick={() => handleScrollToSection("about")}>Read More</button>
         </div>
         <div className="two">
           <img
@@ -116,7 +123,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="second">
+      <div className="second" id="about">
     <div className="about-us-content">
         <h1>About Us</h1>
         <p>
