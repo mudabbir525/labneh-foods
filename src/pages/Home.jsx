@@ -148,27 +148,27 @@ const Home = () => {
     <div className="grid-container">
         <div className="box box1" style={boxStyles.box_1}>
             <img src={drinks} alt="Item 1" className="box-image"></img>
-            <div className="box-info">Drinks Starting from 299/-</div>
+            <div className="box-info">Mocktails</div>
         </div>
         <div className="box box2" style={boxStyles.box_2}>
             <img src={salad} alt="Item 2" className="box-image"></img>
-            <div className="box-info">Information about Item 2</div>
+            <div className="box-info">Salad Platters</div>
         </div>
         <div className="box box3" style={boxStyles.box_3}>
             <img src={mandi} alt="Item 3" className="box-image"></img>
-            <div className="box-info">Information about Item 3</div>
+            <div className="box-info">Mandi Rice Bowls</div>
         </div>
         <div className="box box4" style={boxStyles.box_4}>
             <img src={burger1} alt="Item 4" className="box-image"></img>
-            <div className="box-info">Information about Item 4</div>
+            <div className="box-info">Burgers</div>
         </div>
         <div className="box box5" style={boxStyles.box_5}>
             <img src={shawarma} alt="Item 5" className="box-image"></img>
-            <div className="box-info">Information about Item 5</div>
+            <div className="box-info">Shawarma's</div>
         </div>
         <div className="box box6" style={boxStyles.box_6}>
             <img src={pizza} alt="Item 6" className="box-image"></img>
-            <div className="box-info">Information about Item 6</div>
+            <div className="box-info">Pizza's</div>
         </div>
     </div>
   <div className="one">
