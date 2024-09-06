@@ -1,7 +1,7 @@
 .footer {
   background-color: #1a1a1a;
   color: #e0e0e0;
-  padding: 20px;
+  padding: 20px 0 0 20px; 
   font-family: 'Arial', sans-serif;
 }
 .footer-info{
