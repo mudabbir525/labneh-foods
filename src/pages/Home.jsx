@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import { useNavigate } from 'react-router-dom';
 import burger1 from "../assets/burger1.png";
 import pizza from "../assets/pizza.png";
 import shawarma from "../assets/shawarma.png";
@@ -11,7 +11,12 @@ import drinks from '../assets/drinks.png';
 
 const Home = () => {
    
-  
+   const navigate = useNavigate();
+    const handleMenuClick = () => {
+    navigate('/Menu');
+  };
+
+   
   useEffect(() => {
     const boxes = document.querySelectorAll('.boxx');
     
@@ -156,7 +161,7 @@ const Home = () => {
         </div>
         <div className="box box2" style={boxStyles.box_2}>
             <img src={salad} alt="Item 2" className="box-image"></img>
-            <div className="box-info">Salad Platters</div>
+            <div className="box-info">Salad's</div>
         </div>
         <div className="box box3" style={boxStyles.box_3}>
             <img src={mandi} alt="Item 3" className="box-image"></img>
@@ -176,7 +181,7 @@ const Home = () => {
         </div>
     </div>
   <div className="one">
-   <button className="btn" >MENU</button>
+   <button className="btn"onClick={handleMenuClick} > MENU</button>
     </div>
   </div>
       <div className="fourth">
