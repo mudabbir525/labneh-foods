@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Add styling here
+import { Link } from 'react-router-dom';
 import swiggyLogo from '../assets/swiggy.png'; // Swiggy logo image
 import zomatoLogo from '../assets/zomato.png'; // Zomato logo image
 import { FaPhone, FaEnvelope, FaStore, FaInstagram } from 'react-icons/fa';
@@ -37,9 +38,9 @@ const Footer = () => {
         <div className="nav-section nav-left">
           <h3>Navigation</h3>
           <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Contact Us</li>
+             <li><Link to="/">Home</Link></li>
+            <li><Link to="/menu">Menu</Link></li> 
+            <li><Link to="/contact">Contact Us</Link></li> 
           </ul>
         </div>
 
