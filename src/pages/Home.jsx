@@ -172,7 +172,7 @@ const Home = () => {
         </div>
     </div>
   <div className="one">
-   <button className="btn" onClick={() => navigate("/menu")}>MENU</button>
+   <button className="btn" onClick={() => navigate("/Menu")}>MENU</button>
     </div>
   </div>
       <div className="fourth">
