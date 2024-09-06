@@ -509,8 +509,11 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 
 @media (max-width: 860px) {
+  .second{
+        min-height:50vh;
+  }
   .about-us-content {
-    min-height:50vh;
+
     padding: 10px; /* Reduce padding for smaller screens */
   }
 
@@ -636,9 +639,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 @media (max-width: 548px) {
   .third h1{
-    font-size:2.5rem;
+    font-size:2.2rem;
   }
    .fourth h1{
-    font-size:2.5rem;
+    font-size:2.2rem;
   }
 }
