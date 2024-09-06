@@ -522,6 +522,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     font-size: 9px; /* Reduce the font size of paragraphs */
     line-height: 1.4; /* Adjust line spacing for readability */
     text-align: justify; /* Justify text for better presentation */
+    margin-left: 15px;
   }
 
   .about-us-content p + p {
