@@ -162,6 +162,7 @@ const Home = () => {
             <div className="box-info">Information about Item 6</div>
         </div>
     </div>
+   <button className="btn">Read More</button>
   </div>
       <div className="fourth">
   <h1 className="fourthh1">Discover Labneh</h1>
