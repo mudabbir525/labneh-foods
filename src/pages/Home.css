@@ -506,3 +506,25 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   height: auto; /* Maintain aspect ratio */
   margin: 1rem 0; /* Space around images */
 }
+
+
+@media (max-width: 480px) {
+  .about-us-content {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .about-us-content h1 {
+    font-size: 18px; /* Reduce the heading size */
+    text-align: center; /* Center the heading */
+  }
+
+  .about-us-content p {
+    font-size: 12px; /* Reduce the font size of paragraphs */
+    line-height: 1.4; /* Adjust line spacing for readability */
+    text-align: justify; /* Justify text for better presentation */
+  }
+
+  .about-us-content p + p {
+    margin-top: 10px; /* Add spacing between the paragraphs */
+  }
+}
