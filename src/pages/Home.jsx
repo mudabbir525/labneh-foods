@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Menu from "./Menu";
+
 import burger1 from "../assets/burger1.png";
 import pizza from "../assets/pizza.png";
 import shawarma from "../assets/shawarma.png";
@@ -32,7 +32,7 @@ const Home = () => {
     };
   }, []);
 
-  const [activeTab, setActiveTab] = useState("home");
+  
 
   const boxStyles = {
     box_1: {
@@ -176,7 +176,7 @@ const Home = () => {
         </div>
     </div>
   <div className="one">
-   <button className="btn" onClick={() => setActiveTab("Menu")}>MENU</button>
+   <button className="btn" >MENU</button>
     </div>
   </div>
       <div className="fourth">
