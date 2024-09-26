@@ -178,8 +178,17 @@
   .navbar-links {
     display: flex; /* Show the links */
   }
+
   
   .toggle-button {
     display: none; /* Hide the toggle button */
   }
+}
+
+
+  .franchise-info {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
 }
