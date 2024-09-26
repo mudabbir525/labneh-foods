@@ -25,6 +25,14 @@
   transition: all 0.3s ease-in-out;
 }
 
+  .franchise-info {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+
 .brand-glow::after {
   content: '';
   position: absolute;
