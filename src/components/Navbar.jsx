@@ -17,6 +17,10 @@ const Navbar = () => {
       <div className="navbar-brand">
         <span className="brand-glow"><img src={logo} alt="" /></span>
       </div>
+      {/* Franchise Call Information */}
+      <div className="franchise-info">
+        Call for franchise On: +91 98107 01117
+      </div>
       <ul className="navbar-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/menu">Menu</Link></li>
