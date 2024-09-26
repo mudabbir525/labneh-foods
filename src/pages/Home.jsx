@@ -85,7 +85,7 @@ const Home = () => {
     },
   };
 
-  const images = [burger1, pizza, shawarma];
+  const images = [pizza, shawarma];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFading, setIsFading] = useState(false);
