@@ -180,12 +180,7 @@
     width: 150px;
     left: 5%;
   }
-  .franchise-info {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 16px;
-}
+ 
 }
 
 @media (min-width: 769px) {
