@@ -199,7 +199,7 @@ const Menu = () => {
                 <thead>
                   <tr>
                     <th>Item Name</th>
-                    <th>Price</th>
+                    
                   </tr>
                 </thead>
                 <tbody>
@@ -208,7 +208,7 @@ const Menu = () => {
                     .map((item, i) => (
                       <tr key={i}>
                         <td>{vegDot} {item.name}</td>
-                        <td>₹{item.price}</td>
+                       
                       </tr>
                     ))}
                 </tbody>
@@ -221,7 +221,7 @@ const Menu = () => {
                   <thead>
                     <tr>
                       <th>Item Name</th>
-                      <th>Price</th>
+                     
                     </tr>
                   </thead>
                   <tbody>
@@ -230,7 +230,7 @@ const Menu = () => {
                       .map((item, i) => (
                         <tr key={i}>
                           <td>{nonVegDot} {item.name}</td>
-                          <td>₹{item.price}</td>
+                          
                         </tr>
                       ))}
                   </tbody>
