@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="footer-contact">
          
           <p><FaPhone /> Call Us On: +91 98107 01117</p>
-          <p><FaEnvelope /> Mail Us: labneh.india@gmail.com</p>
+          <p><FaEnvelope /> Mail Us: labnehindia0@gmail.com</p>
           <a href="https://www.instagram.com/labnehindia/" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={24} className="instagram-icon" />
           </a>
