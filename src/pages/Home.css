@@ -420,7 +420,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   grid-column: span 2;
   grid-row: span 1;
 }
-
+.box1 grill{
+    display:block;
+  }
+  .box1 grillsq{
+    display:none;
+  }
 /* Responsive Design */
 
 /* Medium devices (1024px and below) */
@@ -498,9 +503,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     height:100%;
 }
 
-  .box1 img{
-    height:100%;
-}
+  .box1 grill{
+    display:none;
+  }
+  .box1 grillsq{
+    display:block;
+  }
  
 .third h1
 {
