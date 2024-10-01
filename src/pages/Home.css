@@ -340,7 +340,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   transition: bottom 0.3s ease;
 }
 .box img {
-  transform: scale(0.8);
+  transform: scale(1.5);
 }
 .box:hover .box-info {
   bottom: 0;
