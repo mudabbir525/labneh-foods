@@ -310,13 +310,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .box img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
+  height: 100%; /* Ensures the image fills the box */
+  object-fit: cover; /* Ensures the image covers the entire box while maintaining aspect ratio */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Combine transitions into one line */
   transform-origin: center;
-  filter: drop-shadow(0px 5px 20px rgba(255, 255, 255));
-  transition: transform 0.3s ease;
+  filter: drop-shadow(0px 5px 20px rgba(255, 255, 255, 0.5)); /* Adjust the shadow color slightly */
 }
+
 
 .box3 img {
   width: auto;
