@@ -11,6 +11,7 @@
   position:fixed;
   top:0;
   width:100%;
+  z-index:20;
 }
 
 .navbar-brand {
@@ -36,6 +37,8 @@
   top:0;
   text-align:center;
   z-index:10;
+    width:100vw;
+    background-color:green;
 }
 
 
