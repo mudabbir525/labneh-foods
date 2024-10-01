@@ -467,7 +467,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       font-size: 0.9rem;
   }
   .box img {
-      transform: scale(0.8); /* Zoom out more */
+      transform: scale(1); /* Zoom out more */
+  }
+  .box img:hover {
+      transform: scale(1.05); /* Zoom out more */
   }
   .box1, .box2, .box3, .box4, .box5, .box6 {
       grid-column: span 1;
