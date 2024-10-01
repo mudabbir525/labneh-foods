@@ -384,6 +384,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .box6 img{
   height:130%;
+  width:100%;
   transition: 0.3s ease;
 }
 .box6 img:hover{
