@@ -173,7 +173,7 @@
 }/* For screens larger than 1000px */
 @media (min-width: 1000px) {
   .navbar-links {
-    display: flex; /* Show the links */
+    display: flex; /* Ensure links are shown */
   }
   .toggle-button {
     display: none; /* Hide the toggle button */
@@ -202,13 +202,4 @@
     left: 5%;
   }
 }
-
-@media (max-width: 769px) {
-  .franchise-info {
-    font-size:10px;
-    margin-left:20px;
-  }
- 
-}
-
 
