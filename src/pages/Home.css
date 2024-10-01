@@ -443,7 +443,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       font-size: 1rem;
   }
   .box img {
-      transform: scale(0.7); /* Zoom out slightly */
+      transform: scale(1); /* Zoom out slightly */
   }
   .box1, .box2, .box3, .box4, .box5, .box6 {
       grid-column: span 1;
