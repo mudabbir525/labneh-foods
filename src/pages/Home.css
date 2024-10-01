@@ -131,6 +131,9 @@
   .container {
     flex-direction: column;
   }
+  .box1 img{
+    width:100%;
+  }
 }
 
 @media (max-width: 768px) {
