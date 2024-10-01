@@ -70,6 +70,7 @@
   position: absolute;
   right: 20px;
   top: 20px;
+  z-index:10;
 }
 
 .toggle-button:hover {
@@ -193,6 +194,7 @@
   }
   
   .toggle-button {
+    z-index:10;
     display: block; /* Show the toggle button */
   }
 
