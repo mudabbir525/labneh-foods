@@ -325,7 +325,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   object-fit: cover;
   transition: opacity 0.3s ease;
   transform-origin: center;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 .box3 img:hover{
   transform: scale(1.35);
@@ -381,6 +381,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .box3 img{
   scale:1.5;
+}
+.box6 img{
+  width:100%;
+  transition: 0.3s ease;
+}
+.box6 img:hover{
+  scale:1.35;
 }
 .box4 {
   background: linear-gradient(45deg, #2ecc71, #27ae60), url('./doodle.svg');
