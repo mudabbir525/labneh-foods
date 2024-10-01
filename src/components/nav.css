@@ -8,16 +8,12 @@
   box-shadow: 0 4px 8px rgba(210, 209, 209, 0.4);
   position: relative;
   height: 10vh;
-  position:fixed;
-  top:0;
-  width:100%;
-  z-index:20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
 }
-.navbar-links {
-  display: flex; /* Always display flex by default */
-  gap: 30px;
-  list-style: none; /* Remove dots from navbar links */
-}
+
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
@@ -33,17 +29,16 @@
   transition: all 0.3s ease-in-out;
 }
 
-  .franchise-info {
+.franchise-info {
   color: white;
   font-size: 20px;
   font-weight: bold;
-  position:fixed;
-  top:27px;
-  text-align:center;
-  z-index:10;
-    width:100vw;
+  position: fixed;
+  top: 27px;
+  text-align: center;
+  z-index: 10;
+  width: 100vw;
 }
-
 
 .brand-glow::after {
   content: '';
@@ -138,7 +133,8 @@
   position: relative;
 }
 
-.navbar-links li a::before, .navbar-links li a::after {
+.navbar-links li a::before,
+.navbar-links li a::after {
   content: '';
   position: absolute;
   width: 0;
@@ -156,7 +152,8 @@
   right: 0;
 }
 
-.navbar-links li a:hover::before, .navbar-links li a:hover::after {
+.navbar-links li a:hover::before,
+.navbar-links li a:hover::after {
   width: 100%;
 }
 
@@ -164,13 +161,15 @@
   color: #d35602;
   text-shadow: 0 0 8px #ff6600;
 }
-.navbar-brand span img
-{
+
+.navbar-brand span img {
   position: absolute;
   top: -90px;
   width: 150px;
   left: 20%;
-}/* For screens larger than 1000px */
+}
+
+/* For screens larger than 1000px */
 @media (min-width: 1000px) {
   .navbar-links {
     display: flex; /* Ensure links are shown */
@@ -186,11 +185,11 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .navbar-links {
-    display: none; /* Hide the links */
+    display: none; /* Hide the links for small screens */
   }
-  
+
   .toggle-button {
     display: block; /* Show the toggle button */
   }
@@ -201,5 +200,17 @@
     width: 150px;
     left: 5%;
   }
+
+  /* Sidebar open state */
+  .sidebar.open {
+    right: 0; /* Ensure sidebar opens when toggle is clicked */
+  }
 }
 
+/* Extra small screen adjustments */
+@media (max-width: 769px) {
+  .franchise-info {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+}
