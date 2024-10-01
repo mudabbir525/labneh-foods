@@ -8,7 +8,7 @@ import shawarma from "../assets/shawarmaGridmin.jpeg";
 import shawarma1 from "../assets/shawarma.png";
 import salad from "../assets/saladGridmin.jpg";
 import mandi from "../assets/mandiGrid-min.jpg";
-import platter from "../assets/MezzePlattersGridmin.jpg";
+import platter from "../assets/platters.jpg";
 import pizza from "../assets/pizza.png";
 import burger1 from "../assets/burger1.png";
 
