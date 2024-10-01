@@ -187,27 +187,24 @@
     width: 150px;
     left: 5%;
   }
-   .navbar-links {
-    display: flex; /* Show the links */
-  }
-    
-
-
-  
-  .toggle-button {
-    display: none; /* Hide the toggle button */
-  }
+ 
 }
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 999px) {
   
-  .franchise-info {
-    font-size:10px;
+    .navbar-links {
+    display: flex; /* Show the links */
+  }
+  .toggle-button {
+    display: none; /* Hide the toggle button */
   }
  
 }
 
 @media (min-width: 769px) {
+  .franchise-info {
+    font-size:15px;
+  }
  
 }
 
