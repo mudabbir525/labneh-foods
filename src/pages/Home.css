@@ -488,7 +488,20 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   {
       font-size:3rem;
   }
+  .box2 img{
+    height:100%;
 }
+  .box img:hover{
+    scale:1.1;
+  }
+  .box5 img{
+    height:100%;
+}
+
+  .box1 img{
+    height:100%;
+}
+ 
 .third h1
 {
   margin-bottom: 50px;
