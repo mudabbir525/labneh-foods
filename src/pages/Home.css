@@ -433,6 +433,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   .grid-container {
       grid-template-columns: repeat(3, 1fr);
   }
+  .box1 .grill{
+    display:none;
+  }
+  .box1 .grillsq{
+    display:block;
+  }
   .box {
       font-size: 1rem;
   }
@@ -509,7 +515,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   .box1 .grillsq{
     display:block;
   }
- 
+}
 .third h1
 {
   margin-bottom: 50px;
