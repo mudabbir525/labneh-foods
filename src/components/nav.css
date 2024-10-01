@@ -209,6 +209,8 @@
 @media (max-width: 799px) {
   .franchise-info {
     font-size:10px;
+    margin-left:25px;
+    margin-top:20px;
   }
 }
 
