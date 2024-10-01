@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Fixing the class name issue here */}
-      <button className={`toggle-button ${isSidebarOpen ? 'active' : ''}`} onClick={toggleSidebar}>
-        ☰
-      </button>
+      <button className={`toggle-button ${isSidebarOpen ? 'active' : ''}`} onClick={() => setSidebarOpen(!isSidebarOpen)}>
+  ☰
+</button>
       <div className="navbar-brand">
         <span className="brand-glow"><img src={logo} alt="Labneh Logo" /></span>
       </div>
