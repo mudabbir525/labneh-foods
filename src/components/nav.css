@@ -166,21 +166,19 @@
   top: -90px;
   width: 150px;
   left: 20%;
-}
-@media (max-width: 1000px) {
- 
-   .navbar-links {
+}/* For screens larger than 1000px */
+@media (min-width: 1000px) {
+  .navbar-links {
     display: flex; /* Show the links */
   }
   .toggle-button {
     display: none; /* Hide the toggle button */
   }
- 
 }
-/* Responsive Design */
+
+/* For screens smaller than 1000px */
 @media (max-width: 999px) {
-  
-    .navbar {
+  .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -192,14 +190,13 @@
   .toggle-button {
     display: block; /* Show the toggle button */
   }
-  .navbar-brand span img
-  {
+
+  .navbar-brand span img {
     position: relative;
     top: -70px;
     width: 150px;
     left: 5%;
   }
- 
 }
 
 @media (min-width: 769px) {
