@@ -2,11 +2,17 @@ import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-import burger1 from "../assets/burger1.png";
-import pizza from "../assets/pizza.png";
-import shawarma from "../assets/shawarma.png";
-import salad from "../assets/salad.png";
+import grills from "../assets/GrillsGrid-min.jpg";
+import kunaffa from "../assets/kunaffaGrid-min.jpg";
+import shawarma from "../assets/shawarmaGrid-min.jpeg";
+import shawarma1 from "../assets/shawarmaGrid-min.jpeg";
+import salad from "../assets/saladGrid-min.JPG";
 import mandi from "../assets/mandiGrid-min.JPG";
+import platter from "../assets/MezzePlattersGrid-min.jpg";
+import pizza from "../assets/MezzePlattersGrid-min.jpg";
+import burger1 from "../assets/MezzePlattersGrid-min.jpg";
+
+
 
 const Home = () => {
    
