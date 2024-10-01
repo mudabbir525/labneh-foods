@@ -168,7 +168,19 @@
   left: 20%;
 }
 @media (max-width: 1000px) {
-  .navbar {
+ 
+   .navbar-links {
+    display: flex; /* Show the links */
+  }
+  .toggle-button {
+    display: none; /* Hide the toggle button */
+  }
+ 
+}
+/* Responsive Design */
+@media (max-width: 999px) {
+  
+    .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -186,17 +198,6 @@
     top: -70px;
     width: 150px;
     left: 5%;
-  }
- 
-}
-/* Responsive Design */
-@media (max-width: 999px) {
-  
-    .navbar-links {
-    display: flex; /* Show the links */
-  }
-  .toggle-button {
-    display: none; /* Hide the toggle button */
   }
  
 }
