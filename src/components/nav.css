@@ -167,8 +167,7 @@
   width: 150px;
   left: 20%;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -188,6 +187,10 @@
     width: 150px;
     left: 5%;
   }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  
   .franchise-info {
     font-size:10px;
   }
