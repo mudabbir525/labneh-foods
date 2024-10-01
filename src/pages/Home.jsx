@@ -3,6 +3,7 @@ import "./Home.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import grills from "../assets/grills.jpg";
+import grillsq from "../assets/grill-sq.jpg";
 import kunaffa from "../assets/kunaffa.jpg";
 import shawarma from "../assets/shawarmaGrid-min.jpeg";
 import shawarma1 from "../assets/shawarma.png";
@@ -161,7 +162,8 @@ const Home = () => {
     <h1 className="thirdh1">Middle Eastern Feasts</h1>
     <div className="grid-container">
         <div className="box box1" style={boxStyles.box_1}>
-            <img src={grills} alt="Item 1" className="box-image"></img>
+            <img src={grills} alt="Item 1" className="box-image grill"></img>
+            <img src={grillsq} alt="Item 1" className="box-image grillsq"></img>
             <div className="box-info">Grills</div>
         </div>
         <div className="box box2" style={boxStyles.box_2}>
