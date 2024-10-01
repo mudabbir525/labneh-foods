@@ -309,7 +309,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   transform: scale(0.95);
 }
 .box img {
-  width: 100%;
+/*   width: 100%; */
+  scale:1;
   height: 100%; /* Ensures the image fills the box */
   object-fit: cover; /* Ensures the image covers the entire box while maintaining aspect ratio */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Combine transitions into one line */
