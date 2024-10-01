@@ -6,8 +6,7 @@ import burger1 from "../assets/burger1.png";
 import pizza from "../assets/pizza.png";
 import shawarma from "../assets/shawarma.png";
 import salad from "../assets/salad.png";
-import mandi from "../assets/mandi-rice.png";
-import drinks from '../assets/drinks.png';
+import mandi from "../assets/mandiGrid-min.JPG";
 
 const Home = () => {
    
