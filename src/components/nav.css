@@ -199,9 +199,9 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   .franchise-info {
-    font-size:15px;
+    font-size:10px;
   }
  
 }
