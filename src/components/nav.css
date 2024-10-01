@@ -13,7 +13,11 @@
   width:100%;
   z-index:20;
 }
-
+.navbar-links {
+  display: flex; /* Always display flex by default */
+  gap: 30px;
+  list-style: none; /* Remove dots from navbar links */
+}
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
