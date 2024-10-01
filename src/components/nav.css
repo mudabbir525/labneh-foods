@@ -104,6 +104,14 @@
   text-shadow: 0 0 8px #ff6600;
 }
 
+/* Navbar Brand Image Styling */
+.navbar-brand span img {
+  position: absolute;
+  top: -90px;
+  width: 150px;
+  left: 20%;
+}
+
 /* Toggle Button (for smaller screens) */
 .toggle-button {
   font-size: 24px;
@@ -173,6 +181,14 @@
 
   .toggle-button {
     display: block; /* Show the toggle button on smaller screens */
+  }
+
+  /* Ensure proper image placement on smaller screens */
+  .navbar-brand span img {
+    position: relative;
+    top: -70px;
+    width: 150px;
+    left: 5%;
   }
 
   /* Show the sidebar when activated */
