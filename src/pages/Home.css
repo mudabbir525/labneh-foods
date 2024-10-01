@@ -385,7 +385,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   grid-column: span 2;
   grid-row: span 2;
 }
-
+.box4 img{
+  scale:1.2;
+}
 .box5 {
   background: linear-gradient(45deg, #9b59b6, #8e44ad), url('./doodle.svg');
   background-size: cover; 
