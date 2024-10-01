@@ -187,6 +187,16 @@
     width: 150px;
     left: 5%;
   }
+   .navbar-links {
+    display: flex; /* Show the links */
+  }
+    
+
+
+  
+  .toggle-button {
+    display: none; /* Hide the toggle button */
+  }
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -198,16 +208,7 @@
 }
 
 @media (min-width: 769px) {
-  .navbar-links {
-    display: flex; /* Show the links */
-  }
-    
-
-
-  
-  .toggle-button {
-    display: none; /* Hide the toggle button */
-  }
+ 
 }
 
 
