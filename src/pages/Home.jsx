@@ -3,7 +3,7 @@ import "./Home.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import grills from "../assets/GrillsGrid-min.jpg";
-import kunaffa from "../assets/KunaffaGridmin.jpg";
+import kunaffa from "../assets/Kunaffa.jpg";
 import shawarma from "../assets/shawarmaGridmin.jpeg";
 import shawarma1 from "../assets/shawarma.png";
 import salad from "../assets/saladGridmin.jpg";
