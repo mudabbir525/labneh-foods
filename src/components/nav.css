@@ -40,7 +40,7 @@
   position:fixed;
   top:27px;
   text-align:center;
-  z-index:10;
+  z-index:5;
     width:100vw;
 }
 
@@ -136,6 +136,7 @@
   font-family: 'Orbitron', sans-serif;
   transition: all 0.3s ease-in-out;
   position: relative;
+  z-index:1000;
 }
 
 .navbar-links li a::before, .navbar-links li a::after {
