@@ -327,6 +327,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   transform-origin: center;
   transition: background 0.3s ease;
 }
+.box3 img:hover{
+  transform: scale(1.35);
+}
 
 .box-info {
   position: absolute;
