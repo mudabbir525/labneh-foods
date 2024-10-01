@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
       
       {/* Franchise Call Information */}
-      <div className="fr">
+      <div className="text-white">
         Call for franchise On: +91 98107 01117
       </div>
 
