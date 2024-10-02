@@ -22,7 +22,7 @@ const Navbar = () => {
       
       {/* Franchise Call Information */}
       <div className="franchise-info">
-        Call for franchise On: +91 98107 01117
+        Call for Franchise On: +91 98107 01117
       </div>
 
       <ul className="navbar-links">
