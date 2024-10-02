@@ -38,10 +38,10 @@
   font-size: 20px;
   font-weight: bold;
   position:fixed;
-  top:27px;
+  top:29px;
   text-align:center;
   z-index:5;
-    width:100vw;
+  width:100vw;
 }
 
 
@@ -209,7 +209,7 @@
 @media (max-width: 799px) {
   .franchise-info {
     font-size:10px;
-    margin-left:29px;
+    margin-left:33px;
     margin-top:20px;
   }
 }
