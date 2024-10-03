@@ -215,8 +215,8 @@
 }
 @media (max-width: 480px) {
   .franchise-info {
-    font-size:5px;
-    margin-left:33px;
+    font-size: 7px;
+margin-left: 5px;
   }
   .navbar-brand span img
 {
