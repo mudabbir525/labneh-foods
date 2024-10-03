@@ -17,11 +17,11 @@ const Navbar = () => {
   ☰
 </button>
       <div className="navbar-brand">
-          <span className="brand-glow">
+{/*           <span className="brand-glow"> */}
             <Link to="/">
                 <img src={logo} alt="Labneh Logo" />
             </Link>
-          </span>
+{/*           </span> */}
       </div>
       
       {/* Franchise Call Information */}
