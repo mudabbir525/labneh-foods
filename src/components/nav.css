@@ -201,7 +201,7 @@
   .navbar-brand span img {
     position: relative;
     top: -70px;
-    width: 150px;
+    width: 100px;
     left: 5%;
   }
   
@@ -218,5 +218,12 @@
     font-size:5px;
     margin-left:33px;
   }
+  .navbar-brand span img
+{
+  position: absolute;
+  top: -90px;
+  width: 70px;
+  left: 20%;
+}
 }
 
