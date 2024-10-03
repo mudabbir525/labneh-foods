@@ -213,4 +213,9 @@
     margin-top:20px;
   }
 }
+@media (max-width: 480px) {
+  .franchise-info {
+    font-size:5px;
+    margin-left:33px;
+  }
 
