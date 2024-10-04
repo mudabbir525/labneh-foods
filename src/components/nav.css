@@ -210,7 +210,7 @@
   .franchise-info {
         font-size: 19px;
         margin-left: 33px;
-        margin-top: -15px;
+        margin-top: 0px;
   }
 }
 @media (max-width: 480px) {
