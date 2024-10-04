@@ -38,7 +38,7 @@
   font-size: 20px;
   font-weight: bold;
   position:fixed;
-  top:29px;
+  top:11px;
   text-align:center;
   z-index:5;
   width:100vw;
@@ -208,15 +208,15 @@
 }
 @media (max-width: 799px) {
   .franchise-info {
-    font-size:10px;
-    margin-left:33px;
-    margin-top:20px;
+        font-size: 19px;
+        margin-left: 33px;
+        margin-top: -15px;
   }
 }
 @media (max-width: 480px) {
   .franchise-info {
-    font-size: 7px;
-margin-left: 5px;
+    font-size: 11px;
+margin-left: 18px;
   }
   .navbar-brand span img
 {
