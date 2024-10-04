@@ -221,10 +221,10 @@
   }
   .navbar-brand span img
 {
-  position: absolute;
-  top: -30px;
-  width: 90px;
-  left: 20%;
+ position: absolute;
+        top: -38px;
+        width: 90px;
+        left: -8px;
 }
 }
 
