@@ -67,7 +67,7 @@ const Footer = () => {
       rel="noopener noreferrer" 
       className="ss-developers"
     >
-      SS Developers
+      WebHostDevs
     </a>
   </p>
 </div>
