@@ -62,7 +62,8 @@ const Footer = () => {
   <p>
     © 2024 Labneh. Designed by{" "}
     <a 
-      href="https://wa.me/918328497607" 
+      href="https://webhostdevs.com/"
+{/*        href="https://wa.me/918328497607" */}
       target="_blank" 
       rel="noopener noreferrer" 
       className="ss-developers"
